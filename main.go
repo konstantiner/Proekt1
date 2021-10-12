@@ -1,8 +1,10 @@
 package main
 
-import ("fmt"
+import (
+	"fmt"
 				"net/http"
-				"html/template")
+				"html/template"
+)
 
 func index(w http.ResponseWriter, r *http.Request){
 	t, err := template.ParseFiles("templates/index.html", "templates/header.html", "templates/footer.html")
